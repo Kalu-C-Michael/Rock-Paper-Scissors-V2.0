@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="rock-paper-scissors.css">
+</head>
+<body>
+  <h1 class="pixelify-sans-header">Rock Paper Scissors</h1>
+
+  <div class="button-container">
+    <button class="play-button js-rock-button">
+    <img src="./hand icons/rock-gloved.png" class="hand-icon"  alt="rock">
+    </button>
+
+    <button class="play-button js-paper-button">
+    <img src="./hand icons/paper-gloved.png" class="hand-icon"  alt="paper"> 
+    </button>
+
+    <button class="play-button js-scissors-button">
+    <img src="./hand icons/scissors-gloved.png" class="hand-icon"  alt="scissors">
+    </button>
+  </div>
+
+  
+  
+  <p class="play-moves pixelify-sans-scores"></p>
+  <p class="play-result pixelify-sans-scores"></p>
+  <p class="play-score pixelify-sans-scores"></p>
+
+  <!-- Solution for exercise 12v. -->
+  <button
+  class="reset-button js-reset-score-button" 
+  >
+   Reset Score
+  </button>
+
+ <!--exercise 12s: remove the onclick attribute for event listener--> 
+ <button class="auto-play-button js-auto-play-button">
+  Auto Play
+ </button>
+
+ <!--
+  Add an element for displaying the
+  confirmation message.
+  See 12r.html for the full code.
+ -->
+ <p class="reset-confirm-button js-reset-confirmation"></p>
+
+  <script src="rock-paper-scissors.js"></script>
+</body>
+</html>
+

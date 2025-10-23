@@ -1,0 +1,177 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  flex-direction: column;  
+  text-align: center;      
+  padding: 20px; 
+  box-sizing: border-box;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  margin-top: 20px;
+  flex-wrap: nowrap; 
+}
+
+.pixelify-sans-header {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+  color: plum;
+}
+
+.pixelify-sans-scores {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hand-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.play-button {
+  border: 1px solid plum;
+  border-radius: 50%;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  flex-shrink: 0; /* prevent shrinking too much */
+}
+
+.play-button:hover {
+  background-color: plum; 
+  color: black;           
+}
+
+.play-moves {
+  margin-top: 40px;
+}
+
+.play-result {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.reset-button, .auto-play-button, .reset-confirm-button {
+  color: plum;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid plum;
+  border-radius: 20px;
+  padding: 10px 15px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.reset-button:hover, .auto-play-button:hover, .reset-confirm-button:hover {
+  background-color: plum;
+  color: black;
+}
+
+
+
+/* Tablets */
+@media (max-width: 768px) {
+  .pixelify-sans-header {
+    font-size: 24px;
+  }
+
+  .play-button {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hand-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .play-result {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .reset-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .auto-play-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }  
+
+  .reset-confirm-button {
+    font-size: 14px;
+    padding: 8px 12px;    
+  } 
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .pixelify-sans-header {
+    font-size: 20px;
+  }
+
+  .button-container {
+    gap: 10px; 
+  }
+
+  .play-button {
+    width: 65px;
+    height: 65px;
+  }
+
+  .hand-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .play-result {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .reset-button {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .auto-play-button {
+    font-size: 13px;
+    padding: 6px 10px;
+  }  
+
+  .reset-confirm-button {
+    font-size: 13px;
+    padding: 6px 10px;    
+  }   
+}
+
+/*
+  Add extra margin to the confirm buttons.
+  In CSS, we can add multiple sets of styles
+  to the same class. Styles written later
+  will override styles written before.
+*/
+.reset-confirm-button {
+  margin-left: 10px;
+}
+
